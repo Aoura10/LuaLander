@@ -259,7 +259,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 1
+  m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 1618692373}
   - component: {fileID: 1618692374}
   - component: {fileID: 1618692375}
+  - component: {fileID: 1618692376}
   m_Layer: 0
   m_Name: Lander
   m_TagString: Untagged
@@ -723,6 +724,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.02741, y: 1.5824625}
   m_EdgeRadius: 0
+--- !u!114 &1618692376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618692372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5cdcc69166fafa4dbb1a753ac5b1ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lander
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
