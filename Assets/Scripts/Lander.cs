@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.InputSystem; // used for input system package
 
 public class Lander : MonoBehaviour
 {
@@ -11,7 +11,7 @@ public class Lander : MonoBehaviour
         //     Debug.Log("Up");
         // }
     
-        // for input system 
+        // for input system package
         if(Keyboard.current.upArrowKey.isPressed){
             Debug.Log("Up");
         }
