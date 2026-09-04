@@ -14,23 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1787654856
+  lastShownTimestamp: 1788436326
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1787654856
+  checkedLastUpdateTimestamp: 1788436326
   lastQOTDResponse:
-    questionId: 335
-    questionText: What is the difference between Application.dataPath and Application.persistentDataPath
-      on Windows?
-    answerA: No difference on Windows
-    answerB: Application.dataPath is the install folder and Application.persistentDataPath
-      is on the Registry
-    answerC: Application.dataPath is the install folder and Application.persistentDataPath
-      is on the User Data
+    questionId: 338
+    questionText: What will happen on January 19, 2038 at 03:14:07?
+    answerA: Armagedon
+    answerB: End of Unix Time
+    answerC: Half-Life 3 release date
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1787654856
+  lastQotdTimestamp: 1788436326
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
     topText: Get 80% OFF on ALL my Courses and Games!!! (ENDS AUGUST)
@@ -38,20 +35,20 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1787654856
+  lastDynamicHeaderTimestamp: 1788436326
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1787654856
+  websiteLatestMessageTimestamp: 1788436326
   websiteLatestVideos:
     videos:
+    - youTubeId: 8xj9IEFRgKo
+      title: THIS is how you go from BEGINNER to ADVANCED!
+    - youTubeId: XJBrzk7PR4o
+      title: DON'T sell your game for $100!
     - youTubeId: 2QKVo8m5ozQ
       title: The MYTH of the Overnight Game Success! ($10 mil DOESN'T happen like
         that)
     - youTubeId: VZCaQSzsGwU
       title: TOP 10 FREE NEW Assets AUGUST 2026!
-    - youTubeId: Hwpbh2fDPlE
-      title: The SECRET WEAPON making Unity 7 AWESOME - CoreCLR Explained
-    - youTubeId: xsQTCKSHte8
-      title: TOP 10 NEW Games, Made with Unity! (JULY 2026)
-  websiteLatestVideosTimestamp: 1787654856
+  websiteLatestVideosTimestamp: 1788436326

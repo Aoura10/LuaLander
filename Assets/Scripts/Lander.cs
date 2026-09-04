@@ -3,17 +3,19 @@ using UnityEngine.InputSystem; // used for input system package
 
 public class Lander : MonoBehaviour
 {
-    private void Update()
+
+    private Rigidbody2D landerRigidbody2D;
+
+    private void Awake()
     {
-        // for input manager
-        // if(Input.GetKey(KeyCode.UpArrow))
-        // {
-        //     Debug.Log("Up");
-        // }
+        landerRigidbody2D = GetComponent<Rigidbody2D>();
+    }
     
+    private void FixedUpdate()
+    {
         // for input system package
         if(Keyboard.current.upArrowKey.isPressed){
-            Debug.Log("Up");
+            landerRigidbody2D.AddForce(transform.up * Time.deltatime);
         }
 
         if(Keyboard.current.leftArrowKey.isPressed){
@@ -24,8 +26,10 @@ public class Lander : MonoBehaviour
             Debug.Log("Right");
         }
 
-        if(Keyboard.current.downArrowKey.isPressed){
-            Debug.Log("Down");
-        }
+        // for input manager
+        // if(Input.GetKey(KeyCode.UpArrow))
+        // {
+        //     Debug.Log("Up");
+        // }
     }
 }
