@@ -835,6 +835,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7777506112856376982, guid: 491bc9f68306cad40a65002e796205eb, type: 3}
   m_PrefabInstance: {fileID: 1241822414}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1241822417 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5626142120532356289, guid: 491bc9f68306cad40a65002e796205eb, type: 3}
+  m_PrefabInstance: {fileID: 1241822414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1392999904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -895,6 +900,11 @@ PrefabInstance:
 --- !u!4 &1392999905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7777506112856376982, guid: 491bc9f68306cad40a65002e796205eb, type: 3}
+  m_PrefabInstance: {fileID: 1392999904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1392999907 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5626142120532356289, guid: 491bc9f68306cad40a65002e796205eb, type: 3}
   m_PrefabInstance: {fileID: 1392999904}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1445498404
@@ -1204,6 +1214,7 @@ GameObject:
   - component: {fileID: 1618692374}
   - component: {fileID: 1618692375}
   - component: {fileID: 1618692376}
+  - component: {fileID: 1618692377}
   m_Layer: 0
   m_Name: Lander
   m_TagString: Untagged
@@ -1315,6 +1326,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5cdcc69166fafa4dbb1a753ac5b1ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lander
+--- !u!114 &1618692377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618692372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c93d759ccaecf43b2bbe9537a1dda5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LanderVisual
+  leftThrusterParticleSystem: {fileID: 1392999907}
+  middleThrusterParticleSystem: {fileID: 2030799650}
+  rightThrusterParticleSystem: {fileID: 1241822417}
 --- !u!1001 &2030799647
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1375,6 +1401,11 @@ PrefabInstance:
 --- !u!4 &2030799648 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7777506112856376982, guid: 491bc9f68306cad40a65002e796205eb, type: 3}
+  m_PrefabInstance: {fileID: 2030799647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2030799650 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5626142120532356289, guid: 491bc9f68306cad40a65002e796205eb, type: 3}
   m_PrefabInstance: {fileID: 2030799647}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &120351795481915969

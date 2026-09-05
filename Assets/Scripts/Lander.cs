@@ -1,8 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem; // used for input system package
+using System;
 
 public class Lander : MonoBehaviour
 {
+
+    public event EventHandler OnUpForce;
+    public event EventHandler OnRightForce;
+    public event EventHandler OnLeftForce;
+    public event EventHandler OnBeforeForce;
+
 
     private Rigidbody2D landerRigidbody2D;
 
@@ -13,6 +20,8 @@ public class Lander : MonoBehaviour
     
     private void FixedUpdate()
     {
+        OnBeforeForce?.Invoke(this, EventArgs.Empty);
+        
         // for input manager
         // if(Input.GetKey(KeyCode.UpArrow))
         // {
@@ -24,18 +33,23 @@ public class Lander : MonoBehaviour
         {
             float force = 500f;
             landerRigidbody2D.AddForce(force * transform.up * Time.fixedDeltaTime);
+            OnUpForce?.Invoke(this, EventArgs.Empty);
         }
 
         if(Keyboard.current.aKey.isPressed)
         {
             float turnSpeed = +80f;
             landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
+            OnLeftForce?.Invoke(this, EventArgs.Empty);
+
         }
 
         if(Keyboard.current.dKey.isPressed)
         {
             float turnSpeed = -80f;
             landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
+            OnRightForce?.Invoke(this, EventArgs.Empty);
+
         }
     }
 
