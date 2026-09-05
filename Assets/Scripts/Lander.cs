@@ -13,6 +13,12 @@ public class Lander : MonoBehaviour
     
     private void FixedUpdate()
     {
+        // for input manager
+        // if(Input.GetKey(KeyCode.UpArrow))
+        // {
+        //     Debug.Log("Up");
+        // }
+
         // for input system package
         if(Keyboard.current.wKey.isPressed)
         {
@@ -31,11 +37,27 @@ public class Lander : MonoBehaviour
             float turnSpeed = -100f;
             landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
         }
+    }
 
-        // for input manager
-        // if(Input.GetKey(KeyCode.UpArrow))
-        // {
-        //     Debug.Log("Up");
-        // }
+    private void OnCollisionEnter2D(Collision2D Collision2D)
+    {
+        float softLandingVelocityMagnitude = 4f;
+        if (Collision2D.relativeVelocity.magnitude > softLandingVelocityMagnitude)
+        {
+            // Landed too hard!
+            Debug.Log("Landed too hard!");
+            return;
+        }
+
+        float dotVector = Vector2.Dot(Vector2.up, transform.up);
+        float minDotVector = .90f;
+        if (dotVector < minDotVector)
+        {
+            // Landed on a too steep angle!
+            Debug.Log("Landed on a too steep angle!");
+            return;
+        }
+            
+        Debug.Log("Successful Landing!");   
     }
 }
