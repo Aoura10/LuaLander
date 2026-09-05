@@ -14,20 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1788436326
+  lastShownTimestamp: 1788530623
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1788436326
+  checkedLastUpdateTimestamp: 1788530623
   lastQOTDResponse:
-    questionId: 338
-    questionText: What will happen on January 19, 2038 at 03:14:07?
-    answerA: Armagedon
-    answerB: End of Unix Time
-    answerC: Half-Life 3 release date
-    answerD: 
+    questionId: 339
+    questionText: What is the correct way to show a variable in the Editor?
+    answerA: public int health;
+    answerB: public static int health;
+    answerC: '[SerializeField] private int health;'
+    answerD: private int health;
     answerE: 
-  lastQotdTimestamp: 1788436326
+  lastQotdTimestamp: 1788530623
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
     topText: Get 80% OFF on ALL my Courses and Games!!! (ENDS AUGUST)
@@ -35,11 +35,11 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1788436326
+  lastDynamicHeaderTimestamp: 1788530623
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1788436326
+  websiteLatestMessageTimestamp: 1788530623
   websiteLatestVideos:
     videos:
     - youTubeId: 8xj9IEFRgKo
@@ -51,4 +51,4 @@ MonoBehaviour:
         that)
     - youTubeId: VZCaQSzsGwU
       title: TOP 10 FREE NEW Assets AUGUST 2026!
-  websiteLatestVideosTimestamp: 1788436326
+  websiteLatestVideosTimestamp: 1788530623
