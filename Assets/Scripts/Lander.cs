@@ -105,7 +105,7 @@ public class Lander : MonoBehaviour
                 // for input system package
                 if(Keyboard.current.wKey.isPressed)
                 {
-                    float force = 500f;
+                    float force = 600f;
                     landerRigidbody2D.AddForce(force * transform.up * Time.fixedDeltaTime);
 
                     OnUpForce?.Invoke(this, EventArgs.Empty);
@@ -113,7 +113,7 @@ public class Lander : MonoBehaviour
 
                 if(Keyboard.current.aKey.isPressed)
                 {
-                    float turnSpeed = +80f;
+                    float turnSpeed = +85f;
                     landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
 
                     OnLeftForce?.Invoke(this, EventArgs.Empty);
@@ -121,7 +121,7 @@ public class Lander : MonoBehaviour
 
                 if(Keyboard.current.dKey.isPressed)
                 {
-                    float turnSpeed = -80f;
+                    float turnSpeed = -85f;
                     landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
 
                     OnRightForce?.Invoke(this, EventArgs.Empty);

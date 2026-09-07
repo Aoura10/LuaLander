@@ -1,8 +1,14 @@
 using UnityEngine;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
+
+    private static int levelNumber = 1;
+
+    [SerializeField] private List<GameLevel> gameLevelList;
 
     private int score;
     private float time;
@@ -18,6 +24,8 @@ public class GameManager : MonoBehaviour
         Lander.Instance.OnCoinPickup += Lander_OnCoinPickup;
         Lander.Instance.OnLanded += Lander_OnLanded;
         Lander.Instance.OnStateChanged += Lander_OnStateChanged;
+
+        LoadCurrentLevel();
     }
 
     private void Lander_OnStateChanged(object sender, Lander.OnStateChangedEventArgs e)
@@ -31,6 +39,18 @@ public class GameManager : MonoBehaviour
         {
             time += Time.deltaTime;
 
+        }
+    }
+
+    private void LoadCurrentLevel()
+    {
+        foreach (GameLevel gameLevel in gameLevelList)
+        {
+            if(gameLevel.GetLevelNumber() == levelNumber)
+            {
+                GameLevel spawnedGameLevel = Instantiate(gameLevel, Vector3.zero, Quaternion.identity);
+                Lander.Instance.transform.position = spawnedGameLevel.GetLanderStartPosition();
+            }
         }
     }
 
@@ -59,4 +79,20 @@ public class GameManager : MonoBehaviour
     {
         return time;
     }
-}
+
+    public void GoToNextLevel()
+    {
+        levelNumber++;
+        SceneManager.LoadScene(0);
+    }
+    
+    public void RetryThisLevel()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public int GetLevelNumber()
+    {
+        return levelNumber;
+    }
+}   
