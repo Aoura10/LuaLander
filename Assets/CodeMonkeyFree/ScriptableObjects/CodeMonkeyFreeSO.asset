@@ -14,42 +14,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: lunarLanderFree
-  lastShownTimestamp: 1788859911
+  lastShownTimestamp: 1789911401
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1788859912
+  checkedLastUpdateTimestamp: 1789911401
   lastQOTDResponse:
-    questionId: 340
-    questionText: What is the orthographicSize in a 2D camera?
-    answerA: Units visible horizontally
-    answerB: Units visible vertically
-    answerC: Half the units visible horizontally
-    answerD: Half the units visible vertically
+    questionId: 344
+    questionText: 'What will be the value of isOne?
+
+      <p>float oneThird = 1f
+      / 3f;</p>
+
+      <p>bool isOne = (oneThird * 3f) == 1f;</p>'
+    answerA: true
+    answerB: false
+    answerC: 
+    answerD: 
     answerE: 
-  lastQotdTimestamp: 1788859912
+  lastQotdTimestamp: 1789911401
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Maksym.png
-    topText: AWESOME Characters and Weapons 98% OFF! (Modern, Medieval, Fantasy,
-      Sci-Fi, etc)
-    topLink: humblebundle
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/codeMonkeyToolkit50Off.png
+    topText: My Toolkit is 50% OFF! 50+ Tools and Elements to help you make games
+      BETTER and FASTER!
+    topLink: toolkit
     bottomText: Escape Tutorial Hell and level up your skills, try my Practice Lab
       for FREE!
     bottomLink: practicelab
-  lastDynamicHeaderTimestamp: 1788859912
+  lastDynamicHeaderTimestamp: 1789911401
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1788859912
+  websiteLatestMessageTimestamp: 1789911401
   websiteLatestVideos:
     videos:
-    - youTubeId: xhOkkGbL3mY
-      title: How to Make your game look AWESOME! (Unity Lighting and Post Processing
-        Tutorial)
-    - youTubeId: HOm1VQLKhX8
-      title: Unity 6.6 is here and it has 3 MASSIVE IMPROVEMENTS!
-    - youTubeId: 8xj9IEFRgKo
-      title: THIS is how you go from BEGINNER to ADVANCED!
-    - youTubeId: XJBrzk7PR4o
-      title: DON'T sell your game for $100!
-  websiteLatestVideosTimestamp: 1788859912
+    - youTubeId: WFk_vADgnAo
+      title: TOP 10 NEW Games, Made with Unity! (AUGUST 2026)
+    - youTubeId: ndlWuuOw_zo
+      title: Get 70% OFF AWESOME Assets this Autumn!
+    - youTubeId: Wp9I5WhT2OE
+      title: Every Game you make should make your NEXT Game Easier!
+    - youTubeId: QNXgOuo7-Iw
+      title: TOP 10 FREE NEW Assets SEPTEMBER 2026!
+  websiteLatestVideosTimestamp: 1789911401
