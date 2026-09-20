@@ -72,9 +72,9 @@ public class Lander : MonoBehaviour
         {
             default:
             case State.WaitingToStart:
-                if (Keyboard.current.wKey.isPressed ||
-                    Keyboard.current.wKey.isPressed ||
-                    Keyboard.current.wKey.isPressed)
+                if (GameInput.Instance.IsUpActionPressed() ||
+                    GameInput.Instance.IsLeftActionPressed() ||
+                    GameInput.Instance.IsRightActionPressed())
                     {
                         landerRigidbody2D.gravityScale = GRAVITY_NORMAL;
                         SetState(State.Normal);
@@ -88,9 +88,9 @@ public class Lander : MonoBehaviour
                     return;
                 }
 
-                if (Keyboard.current.wKey.isPressed ||
-                    Keyboard.current.wKey.isPressed ||
-                    Keyboard.current.wKey.isPressed)
+                if (GameInput.Instance.IsUpActionPressed() ||
+                    GameInput.Instance.IsLeftActionPressed() ||
+                    GameInput.Instance.IsRightActionPressed())
                     {
                         // Pressing any input
                         ConsumeFuel();
@@ -103,7 +103,7 @@ public class Lander : MonoBehaviour
                 // }
                     
                 // for input system package
-                if(Keyboard.current.wKey.isPressed)
+                if(GameInput.Instance.IsUpActionPressed())
                 {
                     float force = 600f;
                     landerRigidbody2D.AddForce(force * transform.up * Time.fixedDeltaTime);
@@ -111,7 +111,7 @@ public class Lander : MonoBehaviour
                     OnUpForce?.Invoke(this, EventArgs.Empty);
                 }
 
-                if(Keyboard.current.aKey.isPressed)
+                if(GameInput.Instance.IsLeftActionPressed())
                 {
                     float turnSpeed = +85f;
                     landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
@@ -119,7 +119,7 @@ public class Lander : MonoBehaviour
                     OnLeftForce?.Invoke(this, EventArgs.Empty);
                 }
 
-                if(Keyboard.current.dKey.isPressed)
+                if(GameInput.Instance.IsRightActionPressed())
                 {
                     float turnSpeed = -85f;
                     landerRigidbody2D.AddTorque(turnSpeed * Time.fixedDeltaTime);
