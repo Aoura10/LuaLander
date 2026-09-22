@@ -32,4 +32,3 @@ public class StatsUI : MonoBehaviour
             Mathf.Abs(Mathf.Round(Lander.Instance.GetSpeedY() * 10f));
     }
 
-}
