@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class LandedUI : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI titleTextMesh;
@@ -57,6 +57,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     private void Show()
     {
         gameObject.SetActive(true);
+
+        nextButton.Select();
     }
 
     private void Hide()
