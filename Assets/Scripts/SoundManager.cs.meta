@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 546455cd8d55a7c46b637fd6b8bfb3d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - fuelPickupAudioClip: {fileID: 8300000, guid: fbd9c5bf252a6c14b9bb3a84dba2510c, type: 3}
+  - coinPickupAudioClip: {fileID: 8300000, guid: 4286836a473df634692d7fc2988b47bd, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
