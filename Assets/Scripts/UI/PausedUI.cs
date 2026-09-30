@@ -1,13 +1,27 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PausedUI : MonoBehaviour
 {
     [SerializeField] private Button resumeButton;
     [SerializeField] private Button mainMenuButton;
+    [SerializeField] private Button soundVolumeButton;
+    [SerializeField] private TextMeshProUGUI soundVolumeTextMesh;
+    [SerializeField] private Button musicVolumeButton;
+    [SerializeField] private TextMeshProUGUI musicVolumeTextMesh;
 
     private void Awake()
-    {
+    {   
+        soundVolumeButton.onClick.AddListener(() => {
+            SoundManager.Instance.ChangeSoundVolume();
+            soundVolumeTextMesh.text = "SOUND " + SoundManager.Instance.GetSoundVolume();
+        });
+
+        musicVolumeButton.onClick.AddListener(() => {
+            MusicManager.Instance.ChangeMusicVolume();
+            musicVolumeTextMesh.text = "MUSIC " + MusicManager.Instance.GetMusicVolume();
+        });
         resumeButton.onClick.AddListener(() =>
         {
             GameManager.Instance.UnpauseGame();
@@ -24,6 +38,8 @@ public class PausedUI : MonoBehaviour
         GameManager.Instance.OnGamePaused += GameManager_OnGamePaused;
         GameManager.Instance.OnGameUnpaused += GameManager_OnGameUnpaused;
 
+        soundVolumeTextMesh.text = "SOUND" + SoundManager.Instance.GetSoundVolume();
+        musicVolumeTextMesh.text = "MUSIC" + MusicManager.Instance.GetMusicVolume();
         Hide();
     }
 
