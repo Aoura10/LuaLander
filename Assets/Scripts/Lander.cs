@@ -15,6 +15,7 @@ public class Lander : MonoBehaviour
     public event EventHandler OnLeftForce;
     public event EventHandler OnBeforeForce;
     public event EventHandler OnCoinPickup;
+    public event EventHandler OnFuelPickup;
 
     public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
     public class OnStateChangedEventArgs : EventArgs
@@ -222,6 +223,7 @@ public class Lander : MonoBehaviour
                 fuelAmount = fuelAmountMax;
             }
             
+            OnFuelPickup?.Invoke(this, EventArgs.Empty);
             // Destroy(collider2D.gameObject); can do this but not ideal for clean code
             fuelPickup.DestroySelf(); // calls DestroySelf() function from FuelPickup script
         }
